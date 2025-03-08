@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@layer base {
+  :root {
+    --color-surface: theme('colors.surface.light');
+    --color-background: theme('colors.background.light');
+    --color-text-primary: theme('colors.text.light.primary');
+    --color-text-secondary: theme('colors.text.light.secondary');
+  }
+
+  .dark {
+    --color-surface: theme('colors.surface.dark');
+    --color-background: theme('colors.background.dark');
+    --color-text-primary: theme('colors.text.dark.primary');
+    --color-text-secondary: theme('colors.text.dark.secondary');
+  }
+
+  body {
+    @apply bg-background-light text-text-light-primary dark:bg-background-dark dark:text-text-dark-primary;
+    font-family: 'Roboto', system-ui, sans-serif;
+  }
+}
+
+/* Material Design component styles */
+@layer components {
+  .md-card {
+    @apply bg-surface-light dark:bg-surface-dark rounded-lg shadow-elevation-1 p-4;
+  }
+
+  .md-button-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded-md 
+           shadow-elevation-1 hover:shadow-elevation-2 transition-all font-medium;
+  }
+
+  .md-button-outlined {
+    @apply border border-primary-500 text-primary-500 hover:bg-primary-50 
+           dark:hover:bg-opacity-10 py-2 px-4 rounded-md transition-all font-medium;
+  }
+}
