@@ -169,8 +169,8 @@ const About: React.FC = (): JSX.Element => {
               Part of the OWASP Foundation
             </h2>
             <p className="text-text-light-secondary dark:text-text-dark-secondary mb-6">
-              OWASP BLT is a flagship project of the Open Web Application Security Project, a
-              nonprofit foundation working to improve software security.
+              OWASP BLT is a production project of the Open Worldwide Application Security Project,
+              a nonprofit foundation working to improve software security.
             </p>
             <a
               href="https://owasp.org/"
